@@ -6,7 +6,7 @@ sequenceDiagram
     participant 플 as 플레이어
     participant 캐 as 캐릭터 (전사/마법사)
 
-    플_Actor->>+전: 몬스터공격 요청 (플레이어id, 캐릭터명)
+    플_Actor->>+전: 몬스터공격 요청 (플레이어id)
     전->>+플: 플레이어체크(플레이어id:String) 호출
     플-->>-전: 체크 결과 반환 (boolean)
 
