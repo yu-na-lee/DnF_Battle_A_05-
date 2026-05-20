@@ -8,23 +8,23 @@ classDiagram
         <<boundary>>
     }
 
-    %% Controller / Process Classes 
+    %% Controller / Process Classes
     class 전투 {
-        +캐릭터생성(String 플레이어id, String 캐릭터명, int 레벨, String 직업) void
-        +몬스터공격(String 플레이어id) void
+        +캐릭터생성(플레이어id: String, 캐릭터명: String, 레벨: int, 직업: String) void
+        +몬스터공격(플레이어id: String) void
     }
 
     class 플레이어 {
-        +플레이어체크(String 플레이어id) boolean
+        +플레이어체크(플레이어id: String) boolean
     }
 
     %% Core Entities (실제 객체 및 자식 클래스)
     class 캐릭터 {
         <<abstract>>
-        -String 캐릭터명
-        -int 레벨
-        -int HP
-        -int 공격력
+        -캐릭터명: String
+        -레벨: int
+        -HP: int
+        -공격력: int
         +스킬발동()* void
     }
 
