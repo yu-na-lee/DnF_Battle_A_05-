@@ -85,3 +85,4 @@ classDiagram
     전투 ..> 플레이어 : 플레이어체크 및 ID 조회 요청 (Dependency)
     전투 ..> 캐릭터 : 제어 및 대상
     전투 ..> 인벤토리 : 아이템 추가/조회 요청 (Dependency)
+    전투 ..> 길드 : 캐릭터 가입 요청 (Dependency)
