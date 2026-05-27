@@ -1,5 +1,4 @@
 ```mermaid
-
 classDiagram
     %% Boundary Classes (UI 화면)
     class Create_Character_UI {
@@ -51,7 +50,7 @@ classDiagram
     class 인벤토리 {
         -아이템리스트: List
         -최대용량: int = 10
-        +아이템추가(뉴아이템: 아이템) boolean
+        +아이템추가(명칭: String, 타입: String, 가치: int) boolean
     }
 
     class 아이템 {
